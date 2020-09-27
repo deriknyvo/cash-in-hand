@@ -1,6 +1,6 @@
 <div class="container">
     <div class="header">
-      <h1>Novo cliente</h1>
+      <h1>Nova categoria</h1>
       <button 
         routerLink="/categories"
         matTooltip="Voltar" 
@@ -13,16 +13,8 @@
     <mat-divider class="divider"></mat-divider>
     <mat-card>
       <form>
+        
         <div class="form-container">
-
-          <div class="image-container">
-            <img src="assets/profile/sem-foto.png" class="profile-image">
-            
-            <button mat-icon-button class="add-photo">
-              <mat-icon>add_a_photo</mat-icon>
-            </button>
-          </div>
-
           <div class="inputs-container">
             <mat-form-field appearance="standard" class="input">
               <mat-label>Nome</mat-label>
@@ -30,22 +22,14 @@
             </mat-form-field>
   
             <mat-form-field appearance="standard" class="input">
-              <mat-label>Telefone</mat-label>
-              <input matInput>
+              <mat-label>Cor</mat-label>
+              <input matInput [ngxMatColorPicker]="picker" readonly>
+              <ngx-mat-color-toggle matSuffix [for]="picker"></ngx-mat-color-toggle>
+              <ngx-mat-color-picker #picker [touchUi]="true" [color]="color"></ngx-mat-color-picker>
             </mat-form-field>
   
             <mat-form-field appearance="standard" class="input">
-              <mat-label>E-mail</mat-label>
-              <input matInput>
-            </mat-form-field>
-
-            <mat-form-field appearance="standard" class="input-medium">
-              <mat-label>Senha</mat-label>
-              <input matInput>
-            </mat-form-field>
-  
-            <mat-form-field appearance="standard" class="input-medium">
-              <mat-label>Senha novamente</mat-label>
+              <mat-label>Ícone</mat-label>
               <input matInput>
             </mat-form-field>
           </div>

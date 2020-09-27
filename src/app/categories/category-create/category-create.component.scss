@@ -24,48 +24,10 @@
 
 .form-container {
     display: flex;
-    justify-content: space-around;
     align-items: center;
 
-    .image-container {
-        width: 17%;
-        display: flex;
-        align-items: center;
-        transition: all 300ms;
-
-        .profile-image {
-            width: 100%;
-            border-radius: 50%;
-            height: 100%;
-            transition: all 300ms;
-        }
-
-        .add-photo {
-            opacity: 0;
-            position: relative;
-            right: 58%;
-            color: white;
-        }
-    }
-
-    .image-container:hover .add-photo {
-        opacity: 1
-    }
-
-    .image-container:hover .profile-image {
-        filter: brightness(55%);
-    }
-
     .inputs-container {
-        width: 76%;
-
-        .input {
-            width: 100%;
-        }
-        
-        .input-medium {
-            width: 50%;
-        }
+        font-size: 18px;
     }
 }
 
