@@ -6,6 +6,7 @@ import { NgxMatColorPickerModule, MAT_COLOR_FORMATS, NGX_MAT_COLOR_FORMATS } fro
 
 import { CategoryCreateComponent } from './category-create/category-create.component';
 import { CategoriesListComponent } from './categories-list/categories-list.component';
+import { IconPickerInputComponent } from './icon-picker-input/icon-picker-input.component';
 
 const routes: Routes = [
   { path: '', component: CategoriesListComponent },
@@ -15,7 +16,8 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     CategoryCreateComponent,
-    CategoriesListComponent
+    CategoriesListComponent,
+    IconPickerInputComponent
   ],
   imports: [
     CommonModule,
